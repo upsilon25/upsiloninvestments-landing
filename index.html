@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme AI – Launch Faster with AI Agents</title>
+  <meta name="description" content="Acme AI helps teams launch faster with production-ready AI agents for support, ops, and growth." />
+  <meta property="og:title" content="Acme AI – Launch Faster with AI Agents" />
+  <meta property="og:description" content="Acme AI helps teams launch faster with production-ready AI agents for support, ops, and growth." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#4f46e5',
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%234f46e5'/><text x='50' y='58' font-size='54' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'>A</text></svg>">
+  <style>
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+    /* Gradient accent ring utility */
+    .ring-gradient { box-shadow: 0 0 0 1px rgba(79,70,229,.3), 0 10px 30px rgba(79,70,229,.15); }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Announcement bar -->
+  <div class="relative isolate overflow-hidden bg-gradient-to-r from-primary-600 to-primary-400">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 text-center text-white text-sm">
+      ✨ We just opened early access. <a href="#signup" class="underline font-semibold">Join the waitlist</a>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-xl bg-primary-600 grid place-items-center text-white font-bold">A</div>
+        <span class="font-semibold">Acme AI</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
+        <a href="#features" class="hover:text-primary-700">Features</a>
+        <a href="#how" class="hover:text-primary-700">How it works</a>
+        <a href="#pricing" class="hover:text-primary-700">Pricing</a>
+        <a href="#faq" class="hover:text-primary-700">FAQ</a>
+        <a href="#signup" class="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-4 py-2 text-white hover:bg-primary-700 ring-gradient">Get early access</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border" aria-label="Open menu">☰</button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+      <div class="px-4 py-3 space-y-2 text-sm">
+        <a href="#features" class="block">Features</a>
+        <a href="#how" class="block">How it works</a>
+        <a href="#pricing" class="block">Pricing</a>
+        <a href="#faq" class="block">FAQ</a>
+        <a href="#signup" class="block rounded-xl bg-primary-600 px-4 py-2 text-white text-center">Get early access</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          Launch faster with <span class="text-primary-600">AI agents</span>
+        </h1>
+        <p class="mt-6 text-lg text-gray-600">
+          Ship a useful MVP in days, not months. Automate support, operations, and growth—without a big team.
+        </p>
+        <form id="signupTop" class="mt-8 flex flex-col sm:flex-row gap-3" onsubmit="return handleSubmit(event)">
+          <input required type="email" name="email" placeholder="you@company.com" class="flex-1 rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500" />
+          <button class="rounded-xl bg-primary-600 px-6 py-3 text-white font-medium hover:bg-primary-700 ring-gradient">Join waitlist</button>
+        </form>
+        <p class="mt-3 text-sm text-gray-500">No spam. Cancel anytime.</p>
+      </div>
+      <div class="relative">
+        <div class="absolute -inset-6 -z-10 bg-gradient-to-tr from-primary-100 to-transparent rounded-3xl"></div>
+        <div class="aspect-video w-full rounded-3xl border ring-gradient bg-white grid place-items-center p-6">
+          <div class="w-full h-full rounded-2xl bg-gray-100 grid place-items-center text-gray-500">
+            <span class="text-sm">Product screenshot / demo video</span>
+          </div>
+        </div>
+        <div class="mt-4 text-xs text-gray-500">Replace with your screenshot or Loom embed.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos -->
+  <section class="py-10 border-t border-b bg-gray-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-sm uppercase tracking-widest text-gray-500">Backed by / used at</p>
+      <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 opacity-70">
+        <div class="h-10 bg-white rounded-xl border"></div>
+        <div class="h-10 bg-white rounded-xl border"></div>
+        <div class="h-10 bg-white rounded-xl border"></div>
+        <div class="h-10 bg-white rounded-xl border"></div>
+        <div class="h-10 bg-white rounded-xl border"></div>
+        <div class="h-10 bg-white rounded-xl border"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-bold">Why teams pick Acme</h2>
+        <p class="mt-4 text-gray-600">Production-ready, secure, and fast to ship.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="h-10 w-10 rounded-xl bg-primary-600 text-white grid place-items-center font-bold">1</div>
+          <h3 class="mt-4 font-semibold text-lg">Plug-and-play agents</h3>
+          <p class="mt-2 text-gray-600">Deploy prebuilt agents for support, onboarding, and lead gen, then customize in minutes.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="h-10 w-10 rounded-xl bg-primary-600 text-white grid place-items-center font-bold">2</div>
+          <h3 class="mt-4 font-semibold text-lg">Secure by default</h3>
+          <p class="mt-2 text-gray-600">SOC2-ready logging, RBAC, and data controls so you can sell to enterprises sooner.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="h-10 w-10 rounded-xl bg-primary-600 text-white grid place-items-center font-bold">3</div>
+          <h3 class="mt-4 font-semibold text-lg">Pay as you grow</h3>
+          <p class="mt-2 text-gray-600">Start free, scale predictably with usage-based pricing and credits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="py-20 bg-gray-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-bold">How it works</h2>
+        <p class="mt-4 text-gray-600">Three steps to your MVP.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white">
+          <h3 class="font-semibold">1) Connect data</h3>
+          <p class="mt-2 text-gray-600">Plug in docs, helpdesk, and CRM. Bring your own keys.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <h3 class="font-semibold">2) Configure guardrails</h3>
+          <p class="mt-2 text-gray-600">Set tone, boundaries, and escalation flows. Human-in-the-loop as needed.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <h3 class="font-semibold">3) Launch everywhere</h3>
+          <p class="mt-2 text-gray-600">Website widget, Slack, WhatsApp, or API. Measure, iterate, repeat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-bold">Pricing</h2>
+        <p class="mt-4 text-gray-600">Start free. Upgrade when you’re ready.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border">
+          <h3 class="font-semibold text-lg">Free</h3>
+          <p class="mt-1 text-gray-600">For validation & side projects</p>
+          <p class="mt-6 text-3xl font-bold">$0<span class="text-base font-normal text-gray-500">/mo</span></p>
+          <ul class="mt-6 space-y-2 text-gray-600 text-sm">
+            <li>✔ 1 agent • 1k requests</li>
+            <li>✔ Basic analytics</li>
+            <li>✔ Email support</li>
+          </ul>
+          <a href="#signup" class="mt-6 inline-block rounded-xl bg-gray-900 text-white px-4 py-2">Get started</a>
+        </div>
+        <div class="p-6 rounded-2xl border ring-2 ring-primary-600">
+          <h3 class="font-semibold text-lg">Startup</h3>
+          <p class="mt-1 text-gray-600">For growing teams</p>
+          <p class="mt-6 text-3xl font-bold">$49<span class="text-base font-normal text-gray-500">/mo</span></p>
+          <ul class="mt-6 space-y-2 text-gray-600 text-sm">
+            <li>✔ 3 agents • 100k requests</li>
+            <li>✔ Slack & CRM integrations</li>
+            <li>✔ Priority support</li>
+          </ul>
+          <a href="#signup" class="mt-6 inline-block rounded-xl bg-primary-600 text-white px-4 py-2">Start trial</a>
+        </div>
+        <div class="p-6 rounded-2xl border">
+          <h3 class="font-semibold text-lg">Scale</h3>
+          <p class="mt-1 text-gray-600">For production workloads</p>
+          <p class="mt-6 text-3xl font-bold">Custom</p>
+          <ul class="mt-6 space-y-2 text-gray-600 text-sm">
+            <li>✔ SSO, RBAC, SOC2 logs</li>
+            <li>✔ Dedicated support</li>
+            <li>✔ Uptime SLA</li>
+          </ul>
+          <a href="#signup" class="mt-6 inline-block rounded-xl bg-gray-900 text-white px-4 py-2">Contact sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-gray-50">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center">FAQ</h2>
+      <div class="mt-10 grid gap-4">
+        <details class="group rounded-2xl border bg-white p-6">
+          <summary class="cursor-pointer list-none font-medium flex items-center justify-between">How do I join the waitlist? <span class="transition group-open:rotate-45">＋</span></summary>
+          <p class="mt-3 text-gray-600">Use the forms on this page. We’ll email you when your spot opens.</p>
+        </details>
+        <details class="group rounded-2xl border bg-white p-6">
+          <summary class="cursor-pointer list-none font-medium flex items-center justify-between">Can I use my own LLM/API keys? <span class="transition group-open:rotate-45">＋</span></summary>
+          <p class="mt-3 text-gray-600">Yes. Bring your own keys or pick from our managed providers.</p>
+        </details>
+        <details class="group rounded-2xl border bg-white p-6">
+          <summary class="cursor-pointer list-none font-medium flex items-center justify-between">Do you offer startup credits? <span class="transition group-open:rotate-45">＋</span></summary>
+          <p class="mt-3 text-gray-600">Yes—eligible startups can apply for credits through our partners.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup -->
+  <section id="signup" class="py-20">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold">Get early access</h2>
+      <p class="mt-3 text-gray-600">Tell us where to send your invite.</p>
+      <form id="signupBottom" class="mt-8 grid gap-3 sm:grid-cols-3" onsubmit="return handleSubmit(event)">
+        <input required type="text" name="name" placeholder="Your name" class="rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500" />
+        <input required type="email" name="email" placeholder="you@company.com" class="rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500" />
+        <button class="rounded-xl bg-primary-600 px-6 py-3 text-white font-medium hover:bg-primary-700 ring-gradient">Request invite</button>
+      </form>
+      <p class="mt-3 text-xs text-gray-500">By signing up, you agree to our <a href="#" class="underline">Terms</a> and <a href="#" class="underline">Privacy Policy</a>.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-xl bg-primary-600 grid place-items-center text-white font-bold">A</div>
+          <span class="font-semibold">Acme AI</span>
+        </div>
+        <p class="mt-3 text-gray-600">© <span id="year"></span> Acme, Inc. All rights reserved.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-6">
+        <div>
+          <p class="font-semibold">Company</p>
+          <ul class="mt-3 space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-gray-900">About</a></li>
+            <li><a href="#" class="hover:text-gray-900">Blog</a></li>
+            <li><a href="#" class="hover:text-gray-900">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold">Product</p>
+          <ul class="mt-3 space-y-2 text-gray-600">
+            <li><a href="#features" class="hover:text-gray-900">Features</a></li>
+            <li><a href="#pricing" class="hover:text-gray-900">Pricing</a></li>
+            <li><a href="#faq" class="hover:text-gray-900">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold">Stay in the loop</p>
+        <form id="signupFooter" class="mt-3 flex gap-2" onsubmit="return handleSubmit(event)">
+          <input required type="email" name="email" placeholder="you@company.com" class="flex-1 rounded-xl border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500" />
+          <button class="rounded-xl bg-gray-900 px-4 py-2 text-white">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Dummy form handler (replace with your form backend or Formspree)
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form).entries());
+      console.log('Form submitted:', data);
+      alert('Thanks! We\'ll be in touch.');
+      form.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
