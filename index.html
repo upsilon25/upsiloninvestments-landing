@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Upsilon – Grow faster with our solutions</title>
-  <meta name="description" content="Upsilon – Grow faster with our solutions." />
-  <meta property="og:title" content="Upsilon – Grow faster with our solutions" />
-  <meta property="og:description" content="Upsilon investments helps clients to grow faster and manage real-estate projects with our solutions" />
+  <title>Upsilon</title>
+  <meta name="description" content="Upsilon investments helps customers to grow and manage there real-estate portfolio" />
+  <meta property="og:title" content="Upsilon investments helps customers to grow and manage there real-estate portfolio" />
+  <meta property="og:description" content="Upsilon investments helps customers to grow and manage there real-estate portfolio" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/logo.tiff" />
+  <meta property="og:image" content="/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Tailwind CSS (CDN) -->
@@ -36,7 +36,7 @@
       }
     }
   </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%234f46e5'/><text x='50' y='58' font-size='54' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'>A</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%234f46e5'/><text x='50' y='58' font-size='54' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'>U</text></svg>">
   <style>
     /* Smooth scroll */
     html { scroll-behavior: smooth; }
@@ -45,65 +45,54 @@
   </style>
 </head>
 <body class="bg-white text-gray-900">
-  <!-- Announcement bar -->
-  <div class="relative isolate overflow-hidden bg-gradient-to-r from-primary-600 to-primary-400">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 text-center text-white text-sm">
-      ✨ We just opened early access. <a href="#signup" class="underline font-semibold">Join the waitlist</a>
-    </div>
-  </div>
 
   <!-- Nav -->
   <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2">
-        <div class="h-8 w-8 rounded-xl bg-primary-600 grid place-items-center text-white font-bold">A</div>
-        <span class="font-semibold">Acme AI</span>
+      <a href="#" class="flex items-center gap-3">
+        <!-- Brand image placeholder: replace the src with your uploaded file path -->
+        <img src="/assets/logo-mark.png" alt="Brand logo" class="h-8 w-8 rounded-xl object-cover" />
+        <!-- Logo text placeholder -->
+        <span class="font-semibold text-base sm:text-lg">YourBrand</span>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
-        <a href="#features" class="hover:text-primary-700">Features</a>
-        <a href="#how" class="hover:text-primary-700">How it works</a>
-        <a href="#pricing" class="hover:text-primary-700">Pricing</a>
-        <a href="#faq" class="hover:text-primary-700">FAQ</a>
-        <a href="#signup" class="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-4 py-2 text-white hover:bg-primary-700 ring-gradient">Get early access</a>
+        <a href="#about" class="hover:text-primary-700">About</a>
+        <a href="#request" class="hover:text-primary-700">Request</a>
       </nav>
       <button id="menuBtn" class="md:hidden p-2 rounded-lg border" aria-label="Open menu">☰</button>
     </div>
     <!-- Mobile menu -->
     <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
       <div class="px-4 py-3 space-y-2 text-sm">
-        <a href="#features" class="block">Features</a>
-        <a href="#how" class="block">How it works</a>
-        <a href="#pricing" class="block">Pricing</a>
-        <a href="#faq" class="block">FAQ</a>
-        <a href="#signup" class="block rounded-xl bg-primary-600 px-4 py-2 text-white text-center">Get early access</a>
+        <a href="#about" class="block">About</a>
+        <a href="#request" class="block">Request</a>
       </div>
+    </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+  <!-- About -->
+  <section id="about" class="relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-start">
       <div>
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-          Launch faster with <span class="text-primary-600">AI agents</span>
-        </h1>
-        <p class="mt-6 text-lg text-gray-600">
-          Ship a useful MVP in days, not months. Automate support, operations, and growth—without a big team.
-        </p>
-        <form id="signupTop" class="mt-8 flex flex-col sm:flex-row gap-3" onsubmit="return handleSubmit(event)">
-          <input required type="email" name="email" placeholder="you@company.com" class="flex-1 rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500" />
-          <button class="rounded-xl bg-primary-600 px-6 py-3 text-white font-medium hover:bg-primary-700 ring-gradient">Join waitlist</button>
-        </form>
-        <p class="mt-3 text-sm text-gray-500">No spam. Cancel anytime.</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">About <span class="text-primary-600">YourBrand</span></h1>
+        <div class="mt-6 text-lg text-gray-700 space-y-4">
+          <p><!-- Company offerings --></p>
+          <ul class="list-disc pl-6 text-base text-gray-600 space-y-2">
+            <li><!-- Offering #1 placeholder --></li>
+            <li><!-- Offering #2 placeholder --></li>
+            <li><!-- Offering #3 placeholder --></li>
+          </ul>
+        </div>
       </div>
       <div class="relative">
         <div class="absolute -inset-6 -z-10 bg-gradient-to-tr from-primary-100 to-transparent rounded-3xl"></div>
         <div class="aspect-video w-full rounded-3xl border ring-gradient bg-white grid place-items-center p-6">
           <div class="w-full h-full rounded-2xl bg-gray-100 grid place-items-center text-gray-500">
-            <span class="text-sm">Product screenshot / demo video</span>
+            <span class="text-sm">Upload a brand image or product screenshot here</span>
           </div>
         </div>
-        <div class="mt-4 text-xs text-gray-500">Replace with your screenshot or Loom embed.</div>
+        <div class="mt-4 text-xs text-gray-500"><code>logo.tiff</code>)</div>
       </div>
     </div>
   </section>
@@ -191,7 +180,7 @@
             <li>✔ Basic analytics</li>
             <li>✔ Email support</li>
           </ul>
-          <a href="#signup" class="mt-6 inline-block rounded-xl bg-gray-900 text-white px-4 py-2">Get started</a>
+          <a href="#request" class="mt-6 inline-block rounded-xl bg-gray-900 text-white px-4 py-2">Get started</a>
         </div>
         <div class="p-6 rounded-2xl border ring-2 ring-primary-600">
           <h3 class="font-semibold text-lg">Startup</h3>
@@ -202,7 +191,7 @@
             <li>✔ Slack & CRM integrations</li>
             <li>✔ Priority support</li>
           </ul>
-          <a href="#signup" class="mt-6 inline-block rounded-xl bg-primary-600 text-white px-4 py-2">Start trial</a>
+          <a href="#request" class="mt-6 inline-block rounded-xl bg-primary-600 text-white px-4 py-2">Start trial</a>
         </div>
         <div class="p-6 rounded-2xl border">
           <h3 class="font-semibold text-lg">Scale</h3>
@@ -213,7 +202,7 @@
             <li>✔ Dedicated support</li>
             <li>✔ Uptime SLA</li>
           </ul>
-          <a href="#signup" class="mt-6 inline-block rounded-xl bg-gray-900 text-white px-4 py-2">Contact sales</a>
+          <a href="#request" class="mt-6 inline-block rounded-xl bg-gray-900 text-white px-4 py-2">Contact sales</a>
         </div>
       </div>
     </div>
@@ -240,17 +229,17 @@
     </div>
   </section>
 
-  <!-- Signup -->
-  <section id="signup" class="py-20">
+  <!-- Request -->
+  <section id="request" class="py-20">
     <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold">Get early access</h2>
-      <p class="mt-3 text-gray-600">Tell us where to send your invite.</p>
-      <form id="signupBottom" class="mt-8 grid gap-3 sm:grid-cols-3" onsubmit="return handleSubmit(event)">
+      <h2 class="text-3xl md:text-4xl font-bold">Request</h2>
+      <p class="mt-3 text-gray-600">Tell us what you need — demo, quote, or partnership. This form goes to our team.</p>
+      <form id="requestForm" class="mt-8 grid gap-3 sm:grid-cols-3" onsubmit="return handleSubmit(event)">
         <input required type="text" name="name" placeholder="Your name" class="rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500" />
         <input required type="email" name="email" placeholder="you@company.com" class="rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500" />
-        <button class="rounded-xl bg-primary-600 px-6 py-3 text-white font-medium hover:bg-primary-700 ring-gradient">Request invite</button>
+        <button class="rounded-xl bg-primary-600 px-6 py-3 text-white font-medium hover:bg-primary-700 ring-gradient">Send request</button>
       </form>
-      <p class="mt-3 text-xs text-gray-500">By signing up, you agree to our <a href="#" class="underline">Terms</a> and <a href="#" class="underline">Privacy Policy</a>.</p>
+      <textarea class="mt-3 w-full rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500" rows="4" placeholder="Briefly describe your request (optional)"></textarea>
     </div>
   </section>
 
@@ -258,11 +247,13 @@
   <footer class="border-t">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-8 text-sm">
       <div>
-        <div class="flex items-center gap-2">
-          <div class="h-8 w-8 rounded-xl bg-primary-600 grid place-items-center text-white font-bold">A</div>
+        <div class="flex items-center gap-3">
+          <img src="/assets/logo-mark.png" alt="Brand logo" class="h-8 w-8 rounded-xl object-cover" />
+          <span class="font-semibold">YourBrand</span>
+        </div>
           <span class="font-semibold">Acme AI</span>
         </div>
-        <p class="mt-3 text-gray-600">© <span id="year"></span> Acme, Inc. All rights reserved.</p>
+        <p class="mt-3 text-gray-600">© <span id="year"></span> YourBrand, Inc. All rights reserved.</p>
       </div>
       <div class="grid grid-cols-2 gap-6">
         <div>
